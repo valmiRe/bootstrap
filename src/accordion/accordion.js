@@ -78,6 +78,7 @@ angular.module('ui.bootstrap.accordion', ['ui.bootstrap.collapse'])
 
       scope.openClass = attrs.openClass || 'panel-open';
       scope.panelClass = attrs.panelClass || 'panel-default';
+      scope.customOptions = attrs.customOptions ? JSON.parse(attrs.customOptions) : '';
       scope.$watch('isOpen', function(value) {
         element.toggleClass(scope.openClass, !!value);
         if (value) {
