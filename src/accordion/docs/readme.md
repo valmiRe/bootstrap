@@ -41,6 +41,10 @@ The body of each accordion group is transcluded into the body of the collapsible
   _(Default: `uib/template/accordion/accordion-group.html`)_ -
   Add the ability to override the template used on the component.
 
+*  `custom-options`
+  _(Default: `{}`)_ -
+  A json oblject to be pass to custom templates
+
 ### Accordion heading
 
 Instead of the `heading` attribute on the `uib-accordion-group`, you can use an `uib-accordion-heading` element inside a group that will be used as the group's header.
